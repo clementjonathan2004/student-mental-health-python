@@ -24,7 +24,7 @@ This project uses Python to explore the dataset, examine relationships between m
 
 The dataset contains *101 student records* and *11 original variables*.
 
-The variables include:
+The dataset includes information such as:
 
 - Gender
 - Age
@@ -36,25 +36,24 @@ The variables include:
 - Anxiety
 - Panic Attack
 - Specialist Treatment
-- Other student-related information
 
-The data was prepared and analyzed using Python.
+The original dataset is included in the *Raw Data* folder of this repository.
 
 ## 5. Methodology
 
-The project followed these steps:
+The project was carried out using Python through the following steps:
 
 1. Loaded the Student Mental Health dataset.
 2. Checked and cleaned the data.
 3. Checked for missing values and duplicate records.
 4. Standardized the CGPA field.
-5. Created calculated columns for analysis.
+5. Created calculated columns.
 6. Grouped students into age groups.
 7. Encoded Depression, Anxiety, and Panic Attack as numerical scores.
 8. Created a combined Mental Health Score.
 9. Converted CGPA ranges into representative midpoint values.
 10. Performed exploratory data analysis.
-11. Used sorting and filtering operations to examine specific groups.
+11. Performed sorting and filtering operations.
 12. Applied index-based filtering using iloc[] and loc[].
 13. Performed correlation analysis.
 14. Generated descriptive statistics.
@@ -105,7 +104,7 @@ Selected correlations included:
 
 Logistic Regression was used to predict whether a student reported depression.
 
-*Target variable:*
+*Target Variable:*
 - Depression: Yes = 1, No = 0
 
 *Predictors:*
@@ -121,39 +120,42 @@ An 80/20 stratified train-test split was used.
 The analysis produced the following findings:
 
 - The dataset contains *101 student records*.
-- Depression, anxiety, and panic attack were positively related to the combined Mental Health Score.
-- Depression had a correlation of *0.743* with the Mental Health Score.
+- Depression, anxiety, and panic attack showed positive relationships with the combined Mental Health Score.
+- Depression had the strongest selected correlation with the Mental Health Score at *0.743*.
 - Anxiety had a correlation of *0.652* with the Mental Health Score.
 - Panic Attack had a correlation of *0.646* with the Mental Health Score.
 - Depression and Anxiety showed a positive relationship of *0.274*.
 - Depression and Panic Attack showed a positive relationship of *0.247*.
 - Age showed very weak relationships with the other analyzed variables.
-- The Logistic Regression model achieved *71.43% accuracy, correctly predicting **15 out of 21* test observations.
-- The model had *100% recall for No Depression* but only *14% recall for Depression cases*.
-- The model therefore performed much better at identifying students without reported depression than students with reported depression.
+- The Logistic Regression model achieved *71.43% accuracy*.
+- The model correctly predicted *15 out of 21* test observations.
+- Recall for No Depression was *100%, while recall for Depression was **14%*.
+- The model therefore performed much better at identifying No Depression cases than Depression cases.
 
 ## 7. Conclusion / Recommendations
 
 ### Conclusion
 
-This project demonstrates a complete Python data-analysis workflow using a student mental-health dataset.
+This project demonstrates a complete Python data-analysis workflow using a Student Mental Health dataset.
 
 The project combined data cleaning, feature engineering, exploratory analysis, visualization, statistical analysis, correlation analysis, and predictive modelling.
 
 The Logistic Regression model achieved *71.43% accuracy* on the test set. However, its *14% recall for Depression cases* indicates that the model had difficulty identifying positive depression cases.
 
-The relatively small dataset and test set should also be considered when interpreting the model's performance.
+The relatively small dataset and test set should be considered when interpreting the model's performance.
 
 ### Recommendations
 
-- Larger datasets should be used to improve the reliability of predictive modelling.
-- Additional relevant variables could be included to improve model performance.
-- Mental health-related data should be analyzed carefully and responsibly.
-- Models used for mental health prediction should be evaluated using multiple performance metrics, not accuracy alone.
-- Further analysis could explore other machine-learning models and compare their performance.
+- Use larger datasets to improve the reliability of predictive modelling.
+- Include additional relevant variables that may improve model performance.
+- Evaluate mental health prediction models using multiple performance metrics rather than accuracy alone.
+- Compare Logistic Regression with other suitable machine-learning models.
+- Continue improving data quality and preprocessing before modelling.
+- Use predictive results carefully and responsibly when dealing with mental health-related data.
 
 ## Project Files
 
+- *Raw Data* – Contains the original Student Mental Health dataset.
 - *Python Analysis* – Contains the Python analysis file/notebook.
 - *Report* – Contains the complete project report.
 
