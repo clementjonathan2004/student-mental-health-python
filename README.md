@@ -154,7 +154,6 @@ The relatively small dataset and test set should be considered when interpreting
 - Use predictive results carefully and responsibly when dealing with mental health-related data.
 
 ## Project Files
-[View Python Analysis](Python%20Analysis/student_mental_health_project%281%29.ipynb)
 
 - *Raw Data* – Contains the original Student Mental Health dataset.
 - *Python Analysis* – Contains the Python analysis file/notebook.
