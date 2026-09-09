@@ -144,14 +144,14 @@ The Logistic Regression model achieved *71.43% accuracy* on the test set. Howeve
 
 The relatively small dataset and test set should be considered when interpreting the model's performance.
 
-### Recommendations
+## Recommendations
 
-- Use larger datasets to improve the reliability of predictive modelling.
-- Include additional relevant variables that may improve model performance.
-- Evaluate mental health prediction models using multiple performance metrics rather than accuracy alone.
-- Compare Logistic Regression with other suitable machine-learning models.
-- Continue improving data quality and preprocessing before modelling.
-- Use predictive results carefully and responsibly when dealing with mental health-related data.
+- Strengthen counselling and mental health support for students.
+- Organize regular mental health awareness programmes.
+- Provide confidential ways for students to seek help early.
+- Refer students needing further support to qualified professionals.
+- Use the findings to improve student wellbeing programmes.
+
 
 ## Project Files
 
